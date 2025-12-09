@@ -1,0 +1,11 @@
+{
+    "name": "appkit/log",
+    "type": "library",
+    "description": "Logging system for the AppKit framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AppKit\\Log\\": "src/"
+        }
+    }
+}
