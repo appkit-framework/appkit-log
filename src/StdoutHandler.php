@@ -49,16 +49,21 @@ class StdoutHandler implements LogHandlerInterface {
              $message;
 
         if($exception) {
+            echo ': '.
+                 $this -> shortClassName(get_class($exception));
+
+            $exceptionCode = $exception -> getCode();
+            if($exceptionCode != 0)
+                echo '[' . $exceptionCode . ']';
+
+            echo ': '.
+                 $exception -> getMessage();
+
             if($this -> printStackTraces)
                 echo PHP_EOL.
                      PHP_EOL.
                      ((string) $exception).
                      PHP_EOL;
-            else
-                echo ': '.
-                     $this -> shortClassName(get_class($exception)).
-                     ': '.
-                     $exception -> getMessage();
         }
 
         echo PHP_EOL;
