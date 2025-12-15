@@ -51,6 +51,8 @@ class Logger {
             'handler' => $handler,
             'level' => $level -> value
         ];
+
+        return $this;
     }
 
     public function withModule($module, $context = null) {
