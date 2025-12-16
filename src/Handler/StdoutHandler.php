@@ -1,8 +1,8 @@
 <?php
 
-namespace AppKit\Log;
+namespace AppKit\Log\Handler;
 
-use AppKit\Log\LogHandlerInterface;
+use AppKit\Log\Handler\LogHandlerInterface;
 use AppKit\Log\LogLevel;
 
 class StdoutHandler implements LogHandlerInterface {
