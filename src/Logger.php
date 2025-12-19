@@ -2,8 +2,6 @@
 
 namespace AppKit\Log;
 
-use AppKit\Log\LogLevel;
-
 class Logger {
     private $handlers;
     private $moduleName;

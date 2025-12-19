@@ -2,7 +2,6 @@
 
 namespace AppKit\Log\Handler;
 
-use AppKit\Log\Handler\LogHandlerInterface;
 use AppKit\Log\LogLevel;
 
 class StdoutHandler implements LogHandlerInterface {
