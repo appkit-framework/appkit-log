@@ -40,8 +40,8 @@ class Logger {
         $this -> log(LogLevel::Info, $message);
     }
     
-    public function debug($message) {
-        $this -> log(LogLevel::Debug, $message);
+    public function debug($message, $exception = null) {
+        $this -> log(LogLevel::Debug, $message, $exception);
     }
 
     public function addHandler($handler, $level) {
