@@ -11,5 +11,8 @@
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true
+    },
+    "require": {
+        "appkit/async": "^1.0"
     }
 }
